@@ -1,0 +1,51 @@
+Teste Backend
+
+Você acabou de ser contratado como desenvolvedor da Hungry Pizza. 
+Esta é uma pizzaria muito famosa no bairro, seus donos sempre foram muito reticentes 
+quando o assunto é a venda online, mas diante das circunstâncias recentes eles tiveram de reconsiderar. 
+Seu desafio é criar uma API para receber os pedidos feitos à partir do site da pizzaria que atenda aos requisitos abaixo:
+
+# Obrigatórios
+
+- A aplicação deve ser construida com C#
+- A api deve rodar em ambiente Linux, por isso é necessário que seja construída com .NET Core
+- Endpoint que registra um pedido
+    - Todo pedido precisa ter um identificador único, o sistema deve gerar um e no caso de sucesso o endpoint deve retorná-lo
+    - Um pedido pode ter no mínimo uma pizza e no máximo 10.
+    - Cada pizza pode ter até dois sabores.
+    - O preço da pizza com dois sabores deve ser composto pela média dos valores.
+    - O cliente não precisa de cadastro prévio. Dados de entrega devem ser fornecidos junto com o pedido
+    - Não vamos cobrar frete nessa primeira versão do sistema
+    - Criar endpoint para criar pedido e outro para consultar pedido
+- Testes de unidade
+    - como e o que testar, e com quais bibliotecas, fica a critério do que achar mais apropriado
+
+# Desejáveis
+- Testes de integração
+    - como e o que testar, e com quais bibliotecas, fica a critério do que achar mais apropriado
+
+# Informações adicionais
+
+- Apesar de ser um teste simples desejamos ver o que o candidato entende ser o melhor, o "estado da arte", em termos de desenvolvimento de software. Pedimos que capriche o máximo que conseguir.
+- A definição do banco de dados utilizado fica a critério do candidato, assim como bibliotecas e frameworks.
+- Os sabores disponíveis são: 3 Queijos (R$ 50), Frango com requeijão (R$ 59.99), Mussarela (R$ 42.50), Calabresa (R$ 42.50), Pepperoni (R$ 55), Portuguesa (R$ 45), Veggie (R$ 59.99)
+    - os sabores podem ser cadastrados da forma que for mais conveniente (carga no banco, endpoint, etc)
+
+- Esperamos que você resolva o teste em até 2 dias a contar do próximo dia útil após o recebimento do teste.
+
+- Ao final do prazo limite ou quando você terminar, o que acontecer primeiro, você deve publicar o código desenvolvido em um repositório aberto no GitHub e, depois, responder a este e-mail com o link para o repositório.
+
+- Justifique suas decisões:
+    Porque optou por determinado banco de dados?
+    SQLite é um banco de dados leve e fácil de configurar, ideal para desenvolvimento e testes locais,
+    além de ser armazenado em um único arquivo e por ser totalmente compatível com o Entity Framework Core.
+
+    Porque decidiu modelar o problema da forma que modelou?
+    A modelagem foi feita dessa forma para manter uma estrutura clara e organizada, 
+    permitindo fácil extensão e manutenção do sistema. Separar as entidades em 
+    diferentes classes facilita a gestão dos dados e a implementação de futuras funcionalidades.
+
+    Porque decidiu testar o que foi testado?
+    Os testes foram escolhidos para cobrir as principais funcionalidades e 
+    regras de negócio da aplicação, garantindo que o sistema opere conforme esperado 
+    e que possíveis erros sejam identificados e corrigidos rapidamente.
