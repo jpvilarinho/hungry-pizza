@@ -70,7 +70,7 @@ A pasta `.vscode` contém os arquivos `launch.json` e `tasks.json` que configura
 ### Clonar o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/HungryPizzaAPI.git
+git clone https://github.com/jpvilarinho/hungry-pizza.git
 cd HungryPizzaAPI
 ```
 
