@@ -1,0 +1,41 @@
+## Build
+bin/
+obj/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+
+## Rider / VSCode
+.idea/
+.vscode/
+
+## OS
+.DS_Store
+Thumbs.db
+
+## SQLite
+hungrypizza.db
+*.db
+*.db-shm
+*.db-wal
+
+## Environment
+appsettings.Development.json
+
+## Test results
+TestResults/
+
+## NuGet
+*.nupkg
+.nuget/
+
+## Publish
+publish/
+
+## Misc
+*.tmp
+*.bak

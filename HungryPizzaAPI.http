@@ -1,0 +1,28 @@
+@HungryPizzaAPI_HostAddress = http://localhost:5234
+
+### Criar Pedido
+POST {{HungryPizzaAPI_HostAddress}}/api/Pedidos
+Content-Type: application/json
+
+{
+  "pizzas": [
+    { "sabor1": "Mussarela", "sabor2": "Calabresa" },
+    { "sabor1": "Pepperoni" }
+  ],
+  "enderecoEntrega": {
+    "logradouro": "Rua A",
+    "numero": "123",
+    "bairro": "Centro",
+    "cidade": "Cidade A",
+    "estado": "Estado A",
+    "cep": "12345-678"
+  }
+}
+
+### Consultar Pedido
+GET {{HungryPizzaAPI_HostAddress}}/api/Pedidos/{id}
+Accept: application/json
+
+### Obter Preço do Sabor
+GET {{HungryPizzaAPI_HostAddress}}/api/Pedidos/PrecoSabor/Mussarela
+Accept: application/json
